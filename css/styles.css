@@ -518,3 +518,36 @@ background-blend-mode: multiply;
     height: 20rem;
     margin: 1rem 0 0 2rem;
   }
+
+
+.juego {
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-right: 1rem;
+  height: 2.5rem;
+  width: 11rem;
+  border: 1px solid #b2e06b;
+  padding-left: .5rem;
+}
+
+#btn-jugar {
+  width: 7rem;
+  height: 3rem;
+  background-color: #b2e06b;
+  border: 1px solid white;
+  border-radius: 50px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btn-jugar:hover {
+  background-color: #e69090;
+}
