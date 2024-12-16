@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
          if (diaNumero > currentDay) {
              btn.disabled = true;
              btn.style.opacity = '0.5';
-         btn.style.cursor = 'not-allowed';
+             btn.style.cursor = 'not-allowed';
          }
 
         btn.addEventListener('click', () => {
