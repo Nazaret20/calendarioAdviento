@@ -1,123 +1,129 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    background-color: rgb(58, 82, 74);
-    font-size: 62.5%;
-    font-family: "Quicksand", sans-serif;
-    width: 100vw;
-    height: 100vh;
-    
+  background-color: rgb(58, 82, 74);
+  font-size: 62.5%;
+  font-family: "Quicksand", sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 main {
-    width: 80%;
-    height: 80%;
-    margin: 0 auto 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
-    font-family: "Mountains of Christmas", serif;
-    font-size: 5rem;
-    text-shadow: 0 0 1rem rgba(255, 187, 0, 0.925);
-    color: rgb(255, 255, 255);
+  font-family: "Mountains of Christmas", serif;
+  font-size: 5rem;
+  text-shadow: 0 0 1rem rgba(255, 187, 0, 0.925);
+  color: rgb(255, 255, 255);
 }
 
 .linea {
-    width: .20rem;
-    height: 30%;
-    background-color: rgba(255, 251, 215, 0.527);
-    margin: 0 5rem;
+  width: 0.2rem;
+  height: 30%;
+  background-color: rgba(255, 251, 215, 0.527);
+  margin: 0 5rem;
 }
 
 .datos {
-    width: 40rem;
-    height: 30rem;
+  width: 40rem;
+  height: 30rem;
 }
 
-        h2 {
-            padding-top: 1.8rem;
-            color: #c6736e;
-            font-size: 2.8rem;
-            text-align: center;
-        }
+h2 {
+  padding-top: 1.8rem;
+  color: #c6736e;
+  font-size: 2.8rem;
+  text-align: center;
+}
 
-        .form {
-            display: flex;
-            flex-direction: column;
-            margin-top: 2rem;
-        }
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
 
-        #username {
-            height: 4rem;
-            margin-top: 2rem;
-            padding: .8rem;
-            padding-left: 2rem;
-            background-color: transparent;
-            border: 1px solid rgb(255, 245, 220);
-            border-radius: 5px;
-            font-size: 1.6rem;
-            color: white;
-        }
+#username {
+  height: 4rem;
+  margin-top: 2rem;
+  padding: 0.8rem;
+  padding-left: 2rem;
+  background-color: transparent;
+  border: 1px solid rgb(255, 245, 220);
+  border-radius: 5px;
+  font-size: 1.6rem;
+  color: white;
+}
 
-        .contraseña {
-            width: 100%;
-            border: 1px solid rgb(255, 245, 220);
-            margin-top: 2rem;
-            background-color: transparent;
-            border-radius: 5px;
-            display: flex;
-        }
-            #password {
-                width: 100%;
-                height: 4rem;
-                background-color: transparent;
-                padding: .8rem;
-                padding-left: 2rem;
-                border-radius: 5px;
-                border: none;
-                font-size: 1.6rem;
-            }
+.contraseña {
+  width: 100%;
+  border: 1px solid rgb(255, 245, 220);
+  margin-top: 2rem;
+  background-color: transparent;
+  border-radius: 5px;
+  display: flex;
+}
+#password {
+  width: 100%;
+  height: 4rem;
+  background-color: transparent;
+  padding: 0.8rem;
+  padding-left: 2rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.6rem;
+}
 
-            #password::placeholder, #username::placeholder {
-                color: rgb(255, 247, 235);
-            }
+#password::placeholder,
+#username::placeholder {
+  color: rgb(255, 247, 235);
+}
 
-            #password:focus {
-                outline: none;
-            }
+#password:focus {
+  outline: none;
+}
 
-        input[type="checkbox"] {
-            width: 1.1rem;
-            margin-right: 1rem;
-        }
-        
+input[type="checkbox"] {
+  width: 1.1rem;
+  margin-right: 1rem;
+}
 
-        button {
-            width: 100%;
-            height: 4rem;
-            background-color: #E6BE8A;
-            padding: 1rem 0 1rem 0;
-            border: 1px solid rgb(82, 82, 82);
-            border-radius:5px;
-            color: rgb(1, 0, 0);
-            font-size: 1.6rem;
-            margin: 3rem auto 0;
-        }
+button {
+  width: 100%;
+  height: 4rem;
+  background-color: #e6be8a;
+  padding: 1rem 0 1rem 0;
+  border: 1px solid rgb(82, 82, 82);
+  border-radius: 5px;
+  color: rgb(1, 0, 0);
+  font-size: 1.6rem;
+  margin: 2rem auto 0;
+}
 
-            button:hover {
-                cursor: pointer;
-                background-color: #88ad4f;
-
-            }
+button:hover {
+  cursor: pointer;
+  background-color: #88ad4f;
+}
+.div-mensaje-error {
+  margin-top: 2rem;
+}
+.mensaje-error {
+  font-size: 1.8rem;
+  color: #f7b2a1;
+  display: none;
+}
