@@ -94,7 +94,8 @@ h2 {
   color: rgb(255, 247, 235);
 }
 
-#password:focus {
+#password:focus,
+#username:focus {
   outline: none;
 }
 
@@ -126,4 +127,9 @@ button:hover {
   font-size: 1.8rem;
   color: #f7b2a1;
   display: none;
+}
+
+#password:focus::placeholder,
+#username:focus::placeholder {
+  color: transparent;
 }
