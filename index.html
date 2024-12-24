@@ -1,342 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calendario de adviento</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mountains+of+Christmas&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mountains+of+Christmas&family=Quicksand:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="guirnalda">
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-          </div>
-          
-          <div class="guirnalda mirror">
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-            <div class="light"></div>
-          </div>
-          
-    </header>
-    <section>
-        <h1>🌟🦌 Calendario de adviento 🎅🏼🎄</h1>
-        <div class="calendarioContainer">
-            <div class="parent">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mountains+of+Christmas&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mountains+of+Christmas&family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Calendario de adviento</h1>
+      <div class="linea"></div>
+      <div class="datos">
+        <h2>Entra a este mundo...</h2>
+        <div class="form">
+          <input type="text" name="text" id="username" placeholder="Username" />
 
-                <div class="div1">
-                    <button class="btn-abrir-modal" data-day="1">1</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Hola, mi vida, lo cierto es que he hecho un poquito de trampa🙈</p>
-                            <p>He aprendido cositas con las trampas, así que bueno, no está muy mal del todo.Este calendario es para ti, para que descubras algo cada día.</p>
-                            <p>Como ves, para que no puedas hacer trampas, he bloqueado los días que no toca 😜</p>
-                            <p>¡Te quiero! 💙</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div2">
-                    <button class="btn-abrir-modal" data-day="2">2</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>No hay palabras para describir lo que siento por ti, pero estoy segura de que sabes perfectamente a lo que me refiero. ¿Sabes por qué? 💌</p>
-                            <p>Porque lo bonito que tenemos es completamente mutuo y conocemos todas esas palabras que no nos salen porque son muchísimo y no tienen la misma igualdad que unas palabras...</p>
-                            <p>💙¡Te amo mucho!💙</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div3">
-                    <button class="btn-abrir-modal" data-day="3">3</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <figure class="img"><img src="./images/Boo-min.jpg" alt="tú y yo">
-                            <p>Tú y yo amándonos desde el primer día que nos vimos, como si nos hubiésemos visto el corazón toda la vida.🥰 <br><br>No todos los días te encuentras con el amor de tu vida por primera vez. Para nosotras fue así de bonito, y qué suerte haberlo vivido así.😍</p>
-                            </figure>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div4">
-                    <button class="btn-abrir-modal" data-day="4">4</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Gracias, mi vida.</p>
-                            <p>Dirás ¿por qué?🤔</p>
-                            <p>Pues por todo, tesoro, por quedarte primero, por ser tan bonita, por querer construir conmigo una vida, por ayudarme y darme refugio cuando lo necesito, por poner el corazón en entender cada cosa; por muchas cosas pero sobretodo, gracias por confiar tanto en nosotras y amar lo que tenemos. 🙈💙</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div5">
-                    <button class="btn-abrir-modal" data-day="5">5</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Vivir contigo recuerdos nuevos, hacen crecer mi pecho muchísimo.</p>
-                            <p>Por ejemplo, Asturias lo guardo con tanto cariño. Tantas cositas que vivimos, me llenan la patata. Cada día tuvo algo especial que cuando lo pienso me sale una sonrisa.</p>
-                            <p>Cada vez que voy contigo en coche me siento una reina a la cual, otra reina lleva a algún lugar, y por qué no, porque me gusta verte al volante. Ya sabes por qué... 🙊</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div6">
-                    <button class="btn-abrir-modal" data-day="6">6</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Eres todo lo que buscaba y necesitaba en una persona.🎆🎁</p>
-                            <p>Que alguien como tú pensaba que era imposible que existiera en días como hoy. Porque la mayoría tiene el corazón que no funciona bien para querer... </p>
-                            <p>Y llegas tú, llenita de amor, un corazón que no cabe en ese pecho de bueno que es, unos ojos puros, cargada de empatía, de escuchar y ofrecer lo que tiene, lleno de pasión por lo que ama y lo que ama hacer.</p>
-                            <p>Y yo... Yo me rindo de tanto amor que desprendes.🙈😍</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div7">
-                    <button class="btn-abrir-modal" data-day="7">7</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Aquí llega el día de hoy, y quería decirte que me encantas, que me encantas en todos los sentidos.</p>
-                            <p>No se te olvide nunca eso porque me encanta cada gestito que haces con la carita, cada tontería que se te ocurre y que me hace estallar de risa, cada vez que se te enciende la bombilla y la emoción que te entra, cada palabra que te nace del pecho y aterriza en el mío, cada vez que haces como bebé y yo me muero de amor...</p>
-                            <p>¡Te quiero muchísimo!💙</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div8">
-                    <button class="btn-abrir-modal" data-day="8">8</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <figure class="img"><img src="./images/P1010155-min.JPG" alt="tú y yo">
-                                <p>Otro recuerdo precioso, la primera Navidad a tu lado. La primera de muchas... Eso quiero, mi vida💙🙈<br> Este año, vamos a por la segunda y tengo mucha ilusión porque vamos al pueblito de tu papi, donde mi niña de pequeñita pasaba los días, ¡y porque me encanta tenerte al volante! </p>
-                                </figure>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div9">
-                    <button class="btn-abrir-modal" data-day="9">9</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Me gusta muchísimo ver cómo te emociona tanto hacer cualquier idea que se te ocurre y cómo haces ideas con esa cabecita, cómo tus manitas hacen cosas increíbles.👩‍💻</p>
-                            <p>Y no sé, te admiro mucho, mi vida, estoy muy orgullosa de ver todo lo que has crecido, cómo te superas tú misma y eso es tan bonito de ver, y de acompañar, que mi corazoncito brinca de orgullo.</p>
-                            <p>Ojalá verte crecer así toda la vida.💞</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div10">
-                    <button class="btn-abrir-modal" data-day="10">10</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <figure class="img"><img src="./images/P1010147-min.JPG" alt="tú y yo">
-                                <p>Mírate, haciendo el tonto. Yo te miro y me río. 
-                                Pero me río porque mi corazón es muy feliz, solo por estar contigo lo es pero si haces algo pues entonces ya... <br><br>
-                                Es como si me reiniciara la vida, sobretodo cuando nos reímos tanto que se escucha patito por ahí o lloramos literalmente.😂🦆</p>
-                                </figure>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div11">
-                    <button class="btn-abrir-modal" data-day="11">11</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Cuando estoy entre tus brazos, siento como el corazón se calma, y la mayoría de las veces cuando es en la camita, hasta sueño me da.</p>
-                            <p>Literalmente dicen esto: <br> "Esta situación se produce debido a que en el momento en que estás al lado de una persona que te hace sentir segura, lo que provoca en nosotros es la activación del sistema nervioso parasimpático. Esa seguridad va acompañada de una posterior relajación que es la que da lugar al sueño".💙💙💙</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div12">
-                    <button class="btn-abrir-modal" data-day="12">12</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Estoy muy orgullosa de ti.</p>
-                            <p>Verte crecer está siendo increíble, ¿pero sabes todavía que es lo que más me emociona?</p>
-                            <p>Ver como te estás sintiendo tú orgullosa de ti misma. Es algo que no puedo describirte porque al principio recuerdo como te costaba ver lo tremenda que eres, y ahora vas reconociendo cada pasito que haces, ¡te das hasta palmas tú misma! Y se me llena la patata... Eres increíble, mi vida. 💙👩‍💻🙊</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div13">
-                    <button class="btn-abrir-modal" data-day="13">13</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Yo solo quiero poder pasar toda la vida contigo. Viéndote reír, idear, cocinar, mirar tu cosa favorita (o sea fútbol), jugar, escuchar música, comer, dormir, hacer fotos, mirar el mar, pasear, como se te ocurren canciones o cualquier cosa para hacerme reír, dibujar, como haces moines...</p>
-                            <p>No sé, cosas de la vida porque me gusta mirarte, observarte y hacer fotos en mi mente para cuando estoy lejos de ti, acordarme de lo bonita que eres. 🙈💙🥰</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div14">
-                    <button class="btn-abrir-modal" data-day="14">14</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <section class="juego">
-                                <p>¿Quieres jugar a un pequeñito juego?🙈🥰</p>
-                                <div><input type="number" class="input-numero" placeholder="Di un número"/>
-                                <button id="btn-jugar">¡Jugar!</button></div>
-                            </section>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div15">
-                    <button class="btn-abrir-modal" data-day="15">15</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Las almas que se encuentran y se reconocen nunca se sueltan, ni con el silencio, ni con la distancia, ni con las vueltas que da la vida. <br> -Mario Benedetti.</p>
-                            <p>Para este día te dejo esta frase que leí hace unos días y que me llegó a la patata.💙</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div16">
-                    <button class="btn-abrir-modal" data-day="16">16</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Te lo dije ya en algún día pero, gracias, mi vida. Tienes un corazón muy bonito y es todo lo que quiero.</p>
-                            <p>Quiero cuidarlo, y hacerlo lo mejor que pueda, sobretodo hacerlo todo lo que la vida nos deje, quiero que sea mucho, mucho...</p>
-                            <p>Te amo...💙🙈</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div17">
-                    <button class="btn-abrir-modal" data-day="17">17</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <figure class="img"><img src="./images/IMG_20240424_123838-min.jpg" alt="tú y yo">
-                                <p>Significa que: <br><br>Me gustaría pasar toda la vida contigo, así de sencillo. <br><br>
-                                Y quiero que eso suceda con toda mi alma. No he sido más feliz en la vida, no me he sentido más amada en la vida,
-                                y si puedo, no quiero repetir con nadie más el significado de amor y amar.</p>
-                                </figure>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div18">
-                    <button class="btn-abrir-modal" data-day="18">18</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Contenido del día 18</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div19">
-                    <button class="btn-abrir-modal" data-day="19">19</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Contenido del día 19</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div20">
-                    <button class="btn-abrir-modal" data-day="20">20</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Contenido del día 20</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div21">
-                    <button class="btn-abrir-modal" data-day="21">21</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Contenido del día 21</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div22">
-                    <button class="btn-abrir-modal" data-day="22">22</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Contenido del día 22</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div23">
-                    <button class="btn-abrir-modal" data-day="23">23</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Contenido del día 23</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-                <div class="div24">
-                    <button class="btn-abrir-modal" data-day="24">24</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Contenido del día 24</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
+          <div class="contraseña">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
 
-                <div class="div25">
-                    <button class="btn-abrir-modal" data-day="25">25</button>
-                    <dialog class="modal-container">
-                        <div class="contenido-modal">
-                            <p>Contenido del día 24</p>
-                            <button class="btn-cerrar-modal">Cerrar</button>
-                        </div>
-                    </dialog>
-                </div>
-                
-    
-                
-            </div>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+          </div>
+
+          <div class="div-mensaje-error">
+            <p class="mensaje-error">
+              🚨 Ups, se ve que no eres el amor de mi vida.
+            </p>
+          </div>
+
+          <button type="button" id="loginButton">Sign in</button>
         </div>
-    </section>
-
-    <script src="./js/script.js" defer></script>
-</body>
+      </div>
+    </main>
+  </body>
 </html>
