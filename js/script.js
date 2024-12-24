@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const btnAbrirModal = document.querySelector(".btn-abrir-modal");
   const btnCerrarModal = document.querySelector(".btn-cerrar-modal");
   const modalContainer = document.querySelector(".modal-container");
-  const loginButton = document.querySelector("#loginButton");
 
   btnAbrirModal.addEventListener("click", () => {
     modalContainer.showModal();
@@ -144,9 +143,5 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.key === "Enter") {
       mensajeDeRelacion();
     }
-  });
-
-  loginButton.addEventListener("click", function () {
-    window.location.href = "../calendario.html";
   });
 });
