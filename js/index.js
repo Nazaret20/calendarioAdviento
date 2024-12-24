@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       if (data.user) {
         console.log("Login exitoso:", data);
-        window.location.href = "../calendario.html";
+        window.location.href = "calendario.html";
       }
     } catch (err) {
       mensajeError.style.display = "block";
